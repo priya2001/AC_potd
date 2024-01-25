@@ -37,7 +37,7 @@ public:
         
 //         }
         
-    // **********************************Optimal appraoch O(N) 
+    // **********************************Optimal appraoch O(N)***************************** 
         
         int low=0,mid=0,high=nums.size()-1;
         while(mid<=high)
