@@ -19,7 +19,8 @@ public:
         //     }
         // }
         // return count;
-        
+   
+//         optimal approach
         int n=nums.size();
         int count=0;
         unordered_map<int ,int>preSum;
