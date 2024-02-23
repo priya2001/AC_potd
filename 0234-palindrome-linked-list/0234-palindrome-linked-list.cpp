@@ -11,6 +11,7 @@
 class Solution {
 public:
     
+    //this is function for revese the list but only reverse previous of mid (slow->next)
     ListNode *reverseList(ListNode *head)
     {
         if(head==NULL)return NULL;
@@ -35,6 +36,7 @@ public:
     }
     bool isPalindrome(ListNode* head) {
         
+//         firstly linked list break two part by using slow faast approach
         ListNode *slow=head,*fast=head;
         while(fast->next!=NULL&&fast->next->next!=NULL)
         {
@@ -42,7 +44,7 @@ public:
             fast=fast->next->next;
         }
         slow->next=reverseList(slow->next);
-        //check the 
+        //check the half reverseList or starting linkedlist  value not match then return false otherwise true
         ListNode *start=head,*mid=slow->next;
         while(mid!=NULL)
         {
@@ -50,7 +52,7 @@ public:
             start=start->next;
             mid=mid->next;
         }
-        
+        // print head 
         print(head);
         return true;
         
