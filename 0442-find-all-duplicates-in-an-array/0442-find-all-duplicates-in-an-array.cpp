@@ -20,17 +20,37 @@ public:
 
 //            return duplicates;
         
-        // ******************************log(n) complexity**********************
+        // ******************************o(nlog(n)) complexity**********************
         
-        sort(nums.begin(),nums.end());
-        vector<int>res;
-         for(int i=0;i<nums.size()-1;i++)
+        // sort(nums.begin(),nums.end());
+        // vector<int>res;
+        //  for(int i=0;i<nums.size()-1;i++)
+        //     {
+        //        if(nums[i]==nums[i+1])
+        //                 {
+        //                   res.push_back(nums[i]);
+        //                 }
+        //     }
+        //    return res;
+        
+        // *******************************o(n) time and o(1)space complexity*****************
+        
+        vector<int>ans;
+        for(int i=0;i<nums.size();i++)
+        {
+            int num=abs(nums[i]);
+            int index=num-1;
+            if(nums[index]<0)
             {
-               if(nums[i]==nums[i+1])
-                        {
-                          res.push_back(nums[i]);
-                        }
+                ans.push_back(num);
             }
-           return res;
+            else
+            {
+                nums[index]= -nums[index];
+            }
+        }
+        return ans; 
+        
+        
     }
 };
