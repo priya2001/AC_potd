@@ -1,13 +1,8 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
+/* 
+story:-
+1-make mergeTwosotedList function
+2-make partionAndMerge function
+*/
 class Solution {
 public:
     ListNode *mergeTwoSortedList(ListNode *L1 ,ListNode *L2)
