@@ -2,6 +2,9 @@
 story:-
 1-make mergeTwosotedList function
 2-make partionAndMerge function
+
+TC-O(nlogk)
+SC-O(max(n,logk))
 */
 class Solution {
 public:
