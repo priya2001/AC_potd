@@ -9,11 +9,12 @@ public:
         
         while(start<end)
         {
-            if(numbers[start]+numbers[end]<target)
+            int sum=numbers[start]+numbers[end];
+            if(sum<target)
             {
                 start++;
             }
-            else if(numbers[start]+numbers[end]>target)
+            else if(sum>target)
             {
                 end--;
             }
