@@ -15,7 +15,7 @@ public:
         }
         
         // find swap index
-        if(gola_index!=-1)
+        if(gola_index!=-1) // yeh condition false hogi to direct reverse ho jayega 
         {
         int swap_index=gola_index;
         for(int j=n-1;j>=gola_index+1;j--)
