@@ -1,31 +1,34 @@
 class Solution {
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
-          int m = matrix.size();
-        if (m == 0) return false; // Empty matrix
+        //binary serach tc:log(m*n)
         
-        int n = matrix[0].size();
-        if (n == 0) return false; // Empty row
+        int m=matrix.size();
+        if(m == 0)return false;
         
-        // Start from top-right corner
-        int row = 0, col = n - 1;
+        int n=matrix[0].size();
         
-        while (row < m && col >= 0)
+        int start=0;
+        int end=m*n-1;
+        
+        while(start<=end)
         {
-            if (matrix[row][col] == target)
+            int mid=start+(end-start)/2;
+            int r=mid/n; //divide by column
+            int c=mid%n; //modulo by column
+            if(matrix[r][c]==target)
             {
-                return true; // Found target
-            } 
-            else if (matrix[row][col] < target)
+                return true;
+            }
+            else if(matrix[r][c]<target)
             {
-                row++; // Move down (because elements in the current column are smaller)
+                start=mid+1;
             }
             else
             {
-                col--; // Move left (because elements in the current row are larger)
+                end=mid-1;
             }
         }
-        
-        return false; // Target not found
+        return false;
     }
 };
