@@ -21,6 +21,8 @@ public:
         // return nums[r];
         
         //approach 2
+        // tc:  o(n)
+        //sc: o(1)
         int n=nums.size();
         int mini=INT_MAX;
         for(int i=0;i<n;i++)
