@@ -1,3 +1,7 @@
+//Using simple loop and swap
+//T.C : O(n)
+//S.C : O(1)
+
 class Solution {
 public:
     string reversePrefix(string word, char ch) {
