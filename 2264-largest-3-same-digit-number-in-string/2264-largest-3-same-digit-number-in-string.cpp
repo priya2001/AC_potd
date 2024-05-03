@@ -5,7 +5,7 @@ public:
         char maxChar=' ';
         for(int i=2;i<num.size();i++)
         {
-            if(num[i]==num[i-1]&&num[i]==num[i-2])
+            if(num[i]==num[i-1]&&num[i]==num[i-2])//3 length ki unique digit
             {
                 maxChar=max(maxChar,num[i]);
             }
