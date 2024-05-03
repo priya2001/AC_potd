@@ -4,10 +4,6 @@ public:
         sort(begin(s),end(s));
         sort(begin(t),end(t));
         
-        if(s==t)
-        {
-            return true;
-        }
-        return false;
+        return s==t;
     }
 };
