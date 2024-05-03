@@ -1,15 +1,31 @@
 class Solution {
 public:
     char findTheDifference(string s, string t) {
-        int XOR=0;
-        for(auto &ch:s)
-        {
-            XOR=XOR^ch;
+        /********************* Approach-1 ***************************/
+        // int XOR=0;
+        // for(auto &ch:s)
+        // {
+        //     XOR=XOR^ch;
+        // }
+        // for(auto &ch:t)
+        // {
+        //     XOR=XOR^ch;
+        // }
+        // return char(XOR);
+        /********************* Approach-2 ***************************/
+        unordered_map<char, int> mp;
+        
+        for(char &ch : s) {
+            mp[ch]++;
         }
-        for(auto &ch:t)
-        {
-            XOR=XOR^ch;
+        
+        for(char &ch : t) {
+            mp[ch]--;
+            
+            if(mp[ch] < 0)
+                return ch;
         }
-        return char(XOR);
+        
+        return 'a'; //send any random. It will never reach here
     }
 };
