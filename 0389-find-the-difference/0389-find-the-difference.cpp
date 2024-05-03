@@ -13,19 +13,34 @@ public:
         // }
         // return char(XOR);
         /********************* Approach-2 ***************************/
-        unordered_map<char, int> mp;
+//         unordered_map<char, int> mp;
         
-        for(char &ch : s) {
-            mp[ch]++;
-        }
+//         for(char &ch : s) {
+//             mp[ch]++;
+//         }
         
-        for(char &ch : t) {
-            mp[ch]--;
+//         for(char &ch : t) {
+//             mp[ch]--;
             
-            if(mp[ch] < 0)
-                return ch;
+//             if(mp[ch] < 0)
+//                 return ch;
+//         }
+        
+//         return 'a'; //send any random. It will never reach here
+        
+                /********************* Approach-2 ***************************/
+           int sum = 0;
+        
+        for (char &ch: t)
+        {
+            sum += ch;
         }
         
-        return 'a'; //send any random. It will never reach here
+        for (char &ch: s)
+        { 
+            sum -=ch;
+        }
+        
+        return (char)sum;
     }
 };
