@@ -1,32 +1,25 @@
 //Approach-1 (Brute Force)
-//T.C : O(n^2)
+//T.C : O(n)
 //S.C : O(1)
 class Solution {
 public:
     int maxScore(string s) {
          int n=s.size();
          int result=INT_MIN;
+         int total_one=count(begin(s),end(s),'1');
+         int zero=0;
         
         for(int i=0;i<n-1;i++)
         {
-             int left_zero=0;
-            for(int j=0;j<=i;j++)
+          if(s[i]=='1')
             {
-               if(s[j]=='0')
-               {
-                   left_zero++;
-               }
-                
+                total_one--;
             }
-            int right_one=0;
-            for(int j=i+1;j<n;j++)
+            else
             {
-                if(s[j]=='1')
-                {
-                    right_one++;
-                }
+                zero++;
             }
-            result=max(result,left_zero+right_one);
+            result=max(result,total_one+zero);
         }
        return result;
     }
