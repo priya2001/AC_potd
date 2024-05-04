@@ -1,4 +1,4 @@
-//Approach-1 (Brute Force)
+//Approach-2 (Better )
 //T.C : O(n)
 //S.C : O(1)
 class Solution {
