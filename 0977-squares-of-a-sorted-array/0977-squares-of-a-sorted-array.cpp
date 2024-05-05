@@ -1,3 +1,5 @@
+// TC:O(n)
+// SC=O(1)(Not considering the space takent to store the result)
 class Solution {
 public:
     vector<int> sortedSquares(vector<int>& nums) {
