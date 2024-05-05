@@ -2,25 +2,18 @@ class Solution {
 public:
     string maximumOddBinaryNumber(string s) {
         int n=s.size();
+        string result= string(n,'0');
         
-        string result=string(n,'0');
+        int CountOne=count(begin(s),end(s),'1');
         
-        int i=0;
-        for(auto &ch:s)
+       int i=0;
+        while(CountOne>1)
         {
-            if(ch=='1')
-            {
-                if(result[n-1]=='1')// LSB='1' it to be odd Number
-                {
-                    result[i]='1';
-                    i++;
-                }
-                else
-                {
-                    result[n-1]='1';
-                }
-            }
+            result[i]='1';
+            i++;
+            CountOne--;
         }
+        result[n-1]='1';
         return result;
     }
 };
