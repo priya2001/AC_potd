@@ -1,26 +1,27 @@
 class Solution {
 public:
     int timeRequiredToBuy(vector<int>& tickets, int k) {
-        
-        int count = 0; // Variable to store the time
-        int index = 0; // Variable to iterate through the array
-        
-        // Run the loop until the value at the k index becomes zero
-        while (tickets[k] != 0) 
-        {
-            if (tickets[index] > 0)
+         int n = tickets.size();
+        int time = 0;
+
+        if (tickets[k] == 1)
+            return k + 1;
+
+        while (tickets[k] > 0) {
+            for (int i = 0; i < n; i++)
             {
-                count++;
-                tickets[index]--;
-                index = (index + 1) % tickets.size();
-            }
-            else if (tickets[index] == 0)
-            {
-                index = (index + 1) % tickets.size();
+
+                if (tickets[i] != 0)
+                {
+                    tickets[i]--;
+                    time++;
+                }
+
+                if (tickets[k] == 0)
+                    return time;
             }
         }
-        
-        return count;
-        
+
+        return time;
     }
 };
