@@ -9,25 +9,8 @@
 class Solution {
 public:
     void deleteNode(ListNode* node) {
-        
-        // first method********************
-        
-        
-        // ListNode *cur=node;
-        // cur->val=cur->next->val;
-        // cur->next=cur->next->next;
-        
-        
-        // %%%%%%%%%%%%%%%%%%%%Second method%%%%%%%%%%%%%%%%%%%%
-        
-        swap(node->val,node->next->val);
-        ListNode *temp=node->next;
-        node->next=node->next->next;
-        
-        delete temp;
-       
-       
-        
-       
+        ListNode *cur=node;
+        cur->val=cur->next->val;
+        cur->next=cur->next->next;
     }
 };
