@@ -10,12 +10,13 @@ public:
         while(j<n)
         {
             sum=sum+nums[j];
+            //chota krna chah rahe window ko
             while(sum>=target)
             {
                 minL=min(minL,j-i+1);
                 
                 sum=sum-nums[i];
-                i++;
+                i++; //right shift of i
             }
             j++;
         }
