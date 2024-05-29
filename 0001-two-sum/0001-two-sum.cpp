@@ -1,23 +1,17 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-    vector<int>v;
-        int check;
+         map<int,int>mp;
         for(int i=0;i<nums.size();i++)
         {
-            for(int j=i+1;j<nums.size();j++)
+            int remaining=target-nums[i];
+            
+            if(mp.find(remaining)!=mp.end())
             {
-                check=nums[i]+nums[j];
-                if(check==target)
-                {
-                    v.push_back(i);
-                    v.push_back(j);
-                }
+                return {mp[remaining],i}; //index are present
             }
-
-       }
-       return v;   
-       
+            mp[nums[i]]=i; //store the index in map
+        }
+        return {};
     }
 };
-        
