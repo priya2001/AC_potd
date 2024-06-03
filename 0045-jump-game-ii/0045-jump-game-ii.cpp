@@ -6,14 +6,12 @@ public:
         {
             nums[i]=max(nums[i]+i,nums[i-1]);
         }
-
         int jump=0;
         int i=0;
         while(i<n-1)
         {
             jump++;
             i=nums[i];
-
         }
         return jump;
     }
