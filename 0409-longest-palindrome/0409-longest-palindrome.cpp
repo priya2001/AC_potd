@@ -1,33 +1,34 @@
-//usig set 
-//T.C : O(n)
-//S.C : O(n)
 class Solution {
 public:
     int longestPalindrome(string s) {
         int n=s.size();
-        unordered_set<int>st;
-       
-        int result=0;
-        for(auto &ch:s)
+
+        unordered_map<char,int>mp;
+
+        for(int i=0;i<n;i++)
         {
-            if(st.count(ch)) 
-            //check ch in present in st.
-            // agr hai to result mai 2 count krke erase krke hai.
+            mp[s[i]]++;
+        }
+        
+        int result=0;
+        int flag=0;
+        for(auto &it:mp)
+        {
+            if(it.second%2==0)
             {
-                result+=2;
-                st.erase(ch);
+                result = result + it.second;
             }
             else
             {
-                st.insert(ch);
+                result = result + it.second -1;
+                flag=1;
             }
         }
-        if(!st.empty())
+        if(flag==1)
         {
             result++;
         }
 
         return result;
-
     }
 };
