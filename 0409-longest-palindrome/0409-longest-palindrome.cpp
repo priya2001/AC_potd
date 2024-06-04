@@ -1,3 +1,6 @@
+//usig hasmap
+//T.C : O(n)
+//S.C : O(n)
 class Solution {
 public:
     int longestPalindrome(string s) {
@@ -20,7 +23,7 @@ public:
             }
             else
             {
-                result = result + it.second -1;
+                result = result + it.second - 1;
                 flag=1;
             }
         }
@@ -30,5 +33,6 @@ public:
         }
 
         return result;
+
     }
 };
