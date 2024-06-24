@@ -8,14 +8,22 @@ public:
     for (int i = 0; i < grid.size(); i++) {
         for (int j = 0; j < grid[i].size(); j++) {
             if (grid[i][j] == 1) {
-                if (i < minRow) {
+                if (i < minRow) 
+                {
                     minRow = i;
-                    }
-                if (i > maxRow) {
+                }
+                if (i > maxRow) 
+                {
                     maxRow = i;
-                    }
-                if (j < minCol) minCol = j;
-                if (j > maxCol) maxCol = j;
+                }
+                if (j < minCol) 
+                {
+                    minCol = j;
+                }
+                if (j > maxCol) 
+                {
+                    maxCol = j;
+                }
             }
         }
     }
