@@ -25,4 +25,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/priya2001/AC_potd_leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/priya2001/AC_potd_leetcode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
+## Math
+|  |
+| ------- |
+| [1642-water-bottles](https://github.com/priya2001/AC_potd_leetcode/tree/master/1642-water-bottles) |
+## Simulation
+|  |
+| ------- |
+| [1642-water-bottles](https://github.com/priya2001/AC_potd_leetcode/tree/master/1642-water-bottles) |
 <!---LeetCode Topics End-->
