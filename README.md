@@ -28,6 +28,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/priya2001/AC_potd_leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0125-valid-palindrome](https://github.com/priya2001/AC_potd_leetcode/tree/master/0125-valid-palindrome) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/priya2001/AC_potd_leetcode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 ## Math
 |  |
@@ -117,4 +118,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/priya2001/AC_potd_leetcode/tree/master/0023-merge-k-sorted-lists) |
+## Two Pointers
+|  |
+| ------- |
+| [0125-valid-palindrome](https://github.com/priya2001/AC_potd_leetcode/tree/master/0125-valid-palindrome) |
 <!---LeetCode Topics End-->
