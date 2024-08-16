@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/priya2001/AC_potd_leetcode/tree/master/0001-two-sum) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/priya2001/AC_potd_leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
+| [0217-contains-duplicate](https://github.com/priya2001/AC_potd_leetcode/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/priya2001/AC_potd_leetcode/tree/master/0219-contains-duplicate-ii) |
 | [0713-subarray-product-less-than-k](https://github.com/priya2001/AC_potd_leetcode/tree/master/0713-subarray-product-less-than-k) |
 | [2211-k-radius-subarray-averages](https://github.com/priya2001/AC_potd_leetcode/tree/master/2211-k-radius-subarray-averages) |
@@ -16,6 +17,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0003-longest-substring-without-repeating-characters](https://github.com/priya2001/AC_potd_leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/priya2001/AC_potd_leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0141-linked-list-cycle](https://github.com/priya2001/AC_potd_leetcode/tree/master/0141-linked-list-cycle) |
+| [0217-contains-duplicate](https://github.com/priya2001/AC_potd_leetcode/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/priya2001/AC_potd_leetcode/tree/master/0219-contains-duplicate-ii) |
 ## Sliding Window
 |  |
@@ -142,4 +144,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0021-merge-two-sorted-lists](https://github.com/priya2001/AC_potd_leetcode/tree/master/0021-merge-two-sorted-lists) |
 | [0143-reorder-list](https://github.com/priya2001/AC_potd_leetcode/tree/master/0143-reorder-list) |
 | [0206-reverse-linked-list](https://github.com/priya2001/AC_potd_leetcode/tree/master/0206-reverse-linked-list) |
+## Sorting
+|  |
+| ------- |
+| [0217-contains-duplicate](https://github.com/priya2001/AC_potd_leetcode/tree/master/0217-contains-duplicate) |
 <!---LeetCode Topics End-->
