@@ -10,70 +10,34 @@
  */
 class Solution {
 public:
-    
-    // ------------------------------------------recursion approach---------------------------------------
-//     ListNode *merge(ListNode *h1,ListNode*h2)
-//     {
-//         if(h1==NULL)return h2;
-//         if(h2==NULL)return h1;
-        
-//         if(h1->val<h2->val)
-//         {
-//             h1->next=merge(h1->next,h2);
-//             return h1;
-//         }
-//         else
-//         {
-//             h2->next=merge(h1,h2->next);
-//             return h2;
-//         }
-//     }
+    ListNode *arrtoList(vector<int>&arr)
+    {
+        ListNode *dummyNode=new ListNode(-1);
+        ListNode *temp=dummyNode;
+        for(int i=0;i<arr.size();i++)
+        {
+            temp->next=new ListNode(arr[i]);
+            temp = temp->next;
+        }
+        return dummyNode->next;
+    }
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
-        // return merge(list1,list2);
-        
-        
-        // -------------------------------------ilteration method------------------------------------------
-       if(list1==NULL)return list2;
-        if(list2==NULL)return list1;
-        
-        ListNode *ans=new ListNode(-1);   // take dummy Node ,dummy Node value is -1
-        ListNode *tail=ans;
-        
-        // if(list1->val<list2->val)
-        // {
-        //     ans=list1;
-        //     tail=list1;
-        //     list1=list1->next;
-        // }
-        // else
-        // {
-        //     ans=list2;
-        //     tail=list2;
-        //     list2=list2->next;
-        // }
-        while(list1!=NULL&&list2!=NULL) 
+        vector<int>v;
+        ListNode *temp1=list1;
+        ListNode *temp2=list2;
+        while(temp1!=NULL)
         {
-            if(list1->val<list2->val)
-            {
-                tail->next=list1;
-                tail=list1;
-                list1=list1->next;
-            }
-            else
-            {
-                tail->next=list2;
-                tail=list2;
-                list2=list2->next;
-            }
+            v.push_back(temp1->val);
+            temp1=temp1->next;
         }
-        if(list1==NULL)
+        while(temp2!=NULL)
         {
-            tail->next=list2;
+            v.push_back(temp2->val);
+            temp2=temp2->next;
         }
-        else
-        {
-            tail->next=list1;
-        }
-        return ans->next;
+        sort(v.begin(),v.end());
+
+        ListNode *head=arrtoList(v);
+        return head;
     }
 };
