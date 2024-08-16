@@ -22,22 +22,30 @@ public:
         return dummyNode->next;
     }
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
-        vector<int>v;
-        ListNode *temp1=list1;
-        ListNode *temp2=list2;
-        while(temp1!=NULL)
+       ListNode *dummyNode=new ListNode(-1);
+       ListNode *temp=dummyNode;
+       while(list1!=NULL && list2!=NULL)
+       { 
+         if(list1->val<=list2->val)
+         {
+            temp->next=list1;
+            list1=list1->next;
+         } 
+         else
+         {
+            temp->next=list2;
+            list2=list2->next;
+         }
+         temp=temp->next;
+       }
+        if(list1!=NULL)
         {
-            v.push_back(temp1->val);
-            temp1=temp1->next;
+            temp->next=list1;
         }
-        while(temp2!=NULL)
+        else
         {
-            v.push_back(temp2->val);
-            temp2=temp2->next;
+            temp->next=list2;
         }
-        sort(v.begin(),v.end());
-
-        ListNode *head=arrtoList(v);
-        return head;
+       return dummyNode->next;
     }
 };
