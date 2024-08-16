@@ -15,7 +15,6 @@ public:
         start->next=head;
         ListNode *slow=start;
         ListNode *fast=start;
-        
         for(int i=1;i<=n;i++)
         {
             fast=fast->next;
