@@ -9,8 +9,7 @@
  * };
  */
 class Solution {
-public:
-    ListNode* reverse(ListNode* head){
+public:  ListNode* reverse(ListNode* head){
         ListNode*prev=NULL,*next=head;
         while(head){
             next=head->next;
@@ -37,7 +36,7 @@ public:
         return slow;
     }
     void reorderList(ListNode* head) {
-        if(head==NULL||head->next==NULL)return;
+         if(head==NULL||head->next==NULL)return;
 
         ListNode* mid=findmid(head);
         ListNode* head_of_revll=reverse(mid);
