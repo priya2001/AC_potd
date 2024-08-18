@@ -1,28 +1,23 @@
 class Solution {
 public:
     vector<int> countBits(int n) {
+        vector<int>v;
         
-        // inbuilt function ot used
-        // vector<int>res(n+1,0);
-        // for(int i=0;i<n+1;i++)
-        // {
-        //      res[i]=__builtin_popcount(i);
-        // }
-        // return res;
-        
-        vector<int>res(n+1,0);
-        for(int i=0;i<n+1;i++)
+        for(int i=0;i<=n;i++)
         {
-            if(i%2==0)
+            int count=0;
+            int num=i;
+            while(num!=0)
             {
-                res[i]=res[i/2]; //even
+                if(num&1)
+                {
+                    count++;
+                }
+               
+               num=num>>1;
             }
-            else
-            {
-                res[i]=res[i/2]+1;//odd
-            }
+             v.push_back(count);
         }
-        return res;
-        
+        return v;
     }
 };
