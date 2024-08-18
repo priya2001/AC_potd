@@ -36,6 +36,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0371-sum-of-two-integers](https://github.com/priya2001/AC_potd_leetcode/tree/master/0371-sum-of-two-integers) |
 | [1642-water-bottles](https://github.com/priya2001/AC_potd_leetcode/tree/master/1642-water-bottles) |
 ## Simulation
 |  |
@@ -148,4 +149,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0217-contains-duplicate](https://github.com/priya2001/AC_potd_leetcode/tree/master/0217-contains-duplicate) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0371-sum-of-two-integers](https://github.com/priya2001/AC_potd_leetcode/tree/master/0371-sum-of-two-integers) |
 <!---LeetCode Topics End-->
