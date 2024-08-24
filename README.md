@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/priya2001/AC_potd_leetcode/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/priya2001/AC_potd_leetcode/tree/master/0219-contains-duplicate-ii) |
 | [0713-subarray-product-less-than-k](https://github.com/priya2001/AC_potd_leetcode/tree/master/0713-subarray-product-less-than-k) |
+| [0907-koko-eating-bananas](https://github.com/priya2001/AC_potd_leetcode/tree/master/0907-koko-eating-bananas) |
 | [2211-k-radius-subarray-averages](https://github.com/priya2001/AC_potd_leetcode/tree/master/2211-k-radius-subarray-averages) |
 ## Hash Table
 |  |
@@ -112,6 +113,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/priya2001/AC_potd_leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
+| [0907-koko-eating-bananas](https://github.com/priya2001/AC_potd_leetcode/tree/master/0907-koko-eating-bananas) |
 ## Divide and Conquer
 |  |
 | ------- |
