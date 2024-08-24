@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0219-contains-duplicate-ii](https://github.com/priya2001/AC_potd_leetcode/tree/master/0219-contains-duplicate-ii) |
 | [0713-subarray-product-less-than-k](https://github.com/priya2001/AC_potd_leetcode/tree/master/0713-subarray-product-less-than-k) |
 | [0907-koko-eating-bananas](https://github.com/priya2001/AC_potd_leetcode/tree/master/0907-koko-eating-bananas) |
+| [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/priya2001/AC_potd_leetcode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [2211-k-radius-subarray-averages](https://github.com/priya2001/AC_potd_leetcode/tree/master/2211-k-radius-subarray-averages) |
 ## Hash Table
 |  |
@@ -114,6 +115,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/priya2001/AC_potd_leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0907-koko-eating-bananas](https://github.com/priya2001/AC_potd_leetcode/tree/master/0907-koko-eating-bananas) |
+| [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/priya2001/AC_potd_leetcode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 ## Divide and Conquer
 |  |
 | ------- |
