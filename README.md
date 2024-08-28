@@ -44,6 +44,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0231-power-of-two](https://github.com/priya2001/AC_potd_leetcode/tree/master/0231-power-of-two) |
 | [0371-sum-of-two-integers](https://github.com/priya2001/AC_potd_leetcode/tree/master/0371-sum-of-two-integers) |
 | [1642-water-bottles](https://github.com/priya2001/AC_potd_leetcode/tree/master/1642-water-bottles) |
 ## Simulation
@@ -165,6 +166,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0021-merge-two-sorted-lists](https://github.com/priya2001/AC_potd_leetcode/tree/master/0021-merge-two-sorted-lists) |
 | [0143-reorder-list](https://github.com/priya2001/AC_potd_leetcode/tree/master/0143-reorder-list) |
 | [0206-reverse-linked-list](https://github.com/priya2001/AC_potd_leetcode/tree/master/0206-reverse-linked-list) |
+| [0231-power-of-two](https://github.com/priya2001/AC_potd_leetcode/tree/master/0231-power-of-two) |
 ## Sorting
 |  |
 | ------- |
@@ -175,6 +177,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0190-reverse-bits](https://github.com/priya2001/AC_potd_leetcode/tree/master/0190-reverse-bits) |
 | [0191-number-of-1-bits](https://github.com/priya2001/AC_potd_leetcode/tree/master/0191-number-of-1-bits) |
+| [0231-power-of-two](https://github.com/priya2001/AC_potd_leetcode/tree/master/0231-power-of-two) |
 | [0338-counting-bits](https://github.com/priya2001/AC_potd_leetcode/tree/master/0338-counting-bits) |
 | [0371-sum-of-two-integers](https://github.com/priya2001/AC_potd_leetcode/tree/master/0371-sum-of-two-integers) |
 ## Dynamic Programming
