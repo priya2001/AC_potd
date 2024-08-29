@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/priya2001/AC_potd_leetcode/tree/master/0001-two-sum) |
 | [0078-subsets](https://github.com/priya2001/AC_potd_leetcode/tree/master/0078-subsets) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/priya2001/AC_potd_leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
+| [0136-single-number](https://github.com/priya2001/AC_potd_leetcode/tree/master/0136-single-number) |
 | [0217-contains-duplicate](https://github.com/priya2001/AC_potd_leetcode/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/priya2001/AC_potd_leetcode/tree/master/0219-contains-duplicate-ii) |
 | [0410-split-array-largest-sum](https://github.com/priya2001/AC_potd_leetcode/tree/master/0410-split-array-largest-sum) |
@@ -177,6 +178,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0078-subsets](https://github.com/priya2001/AC_potd_leetcode/tree/master/0078-subsets) |
+| [0136-single-number](https://github.com/priya2001/AC_potd_leetcode/tree/master/0136-single-number) |
 | [0190-reverse-bits](https://github.com/priya2001/AC_potd_leetcode/tree/master/0190-reverse-bits) |
 | [0191-number-of-1-bits](https://github.com/priya2001/AC_potd_leetcode/tree/master/0191-number-of-1-bits) |
 | [0231-power-of-two](https://github.com/priya2001/AC_potd_leetcode/tree/master/0231-power-of-two) |
