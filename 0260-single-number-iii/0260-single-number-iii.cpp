@@ -1,32 +1,24 @@
 class Solution {
 public:
     vector<int> singleNumber(vector<int>& nums) {
-        
-         long long xor_r = 0;
-
-        for(int &num : nums) {
-            xor_r ^= num;
+        long long  XOR=0;
+        for(int i=0;i<nums.size();i++)
+        {
+            XOR=XOR^nums[i];
         }
-
-        //mask -> right most set bit search 
-        int mask = (xor_r) & (-xor_r);
- /*
-    It works because if you take the two's complement negation of a number, first you complement it,
-    setting all zeroes to the right of the lowest set bit to one and the lowest set bit to zero,
-    then you add one, setting the bits on the right to zero and the lowest set bit becomes one again, ending the carry chain.
-*/
-
-        int groupa = 0;
-        int groupb = 0;
-
-        for(int &num : nums) {
-            if(num & mask) {
-                groupa ^= num;
-            } else {
-                groupb ^= num;
+        long long rightmost=XOR & -XOR;
+        int b1=0,b2=0;
+        for(int i=0;i<nums.size();i++)
+        {
+            if(nums[i]&rightmost)
+            {
+                b1=b1^nums[i];
+            }
+            else
+            {
+                b2=b2^nums[i];
             }
         }
-
-        return {groupa, groupb};
+        return {b1,b2};
     }
 };
