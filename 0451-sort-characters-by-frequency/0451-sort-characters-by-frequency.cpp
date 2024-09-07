@@ -1,27 +1,29 @@
-//Approach-1 (Using Simple vector of pair and sorting it -  O(nlogn)
 class Solution {
 public:
-     typedef pair<char, int> P;
+bool static comp(pair<char,int>&a,pair<char,int>&b)
+{
+    return a.second>b.second;
+}
     string frequencySort(string s) {
-         vector<P> vec(123);
-        
-        for(char &ch : s) {
-            int freq = vec[ch].second;
-            vec[ch] = {ch, freq+1};
+        unordered_map<char,int>mp;
+        for(int i=0;i<s.size();i++)
+        {
+            mp[s[i]]++;
         }
-        
-        auto comp = [&](P &p1, P &p2) {
-            return p1.second > p2.second;
-        };
-        
-        sort(begin(vec), end(vec), comp);
-        
-        string result = "";
-        
-        for(int i = 0; i <= 122; i++) {
-            result += string(vec[i].second, vec[i].first);
+        vector<pair<char,int>>v;
+        for(auto &x:mp)
+        {
+            v.push_back({x.first,x.second});
         }
-        return result;
-       
+        sort(v.begin(),v.end(),comp);
+        string ans="";
+        for(auto &it:v)
+        {
+            for(int i=0;i<it.second;i++)
+            {
+              ans+=it.first;
+            }
+        }
+        return ans;
     }
 };
