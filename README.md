@@ -17,6 +17,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0713-subarray-product-less-than-k](https://github.com/priya2001/AC_potd_leetcode/tree/master/0713-subarray-product-less-than-k) |
 | [0907-koko-eating-bananas](https://github.com/priya2001/AC_potd_leetcode/tree/master/0907-koko-eating-bananas) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/priya2001/AC_potd_leetcode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
+| [1256-rank-transform-of-an-array](https://github.com/priya2001/AC_potd_leetcode/tree/master/1256-rank-transform-of-an-array) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/priya2001/AC_potd_leetcode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/priya2001/AC_potd_leetcode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1646-kth-missing-positive-number](https://github.com/priya2001/AC_potd_leetcode/tree/master/1646-kth-missing-positive-number) |
@@ -32,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0219-contains-duplicate-ii](https://github.com/priya2001/AC_potd_leetcode/tree/master/0219-contains-duplicate-ii) |
 | [0242-valid-anagram](https://github.com/priya2001/AC_potd_leetcode/tree/master/0242-valid-anagram) |
 | [0451-sort-characters-by-frequency](https://github.com/priya2001/AC_potd_leetcode/tree/master/0451-sort-characters-by-frequency) |
+| [1256-rank-transform-of-an-array](https://github.com/priya2001/AC_potd_leetcode/tree/master/1256-rank-transform-of-an-array) |
 ## Sliding Window
 |  |
 | ------- |
@@ -186,6 +188,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/priya2001/AC_potd_leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/priya2001/AC_potd_leetcode/tree/master/0242-valid-anagram) |
 | [0451-sort-characters-by-frequency](https://github.com/priya2001/AC_potd_leetcode/tree/master/0451-sort-characters-by-frequency) |
+| [1256-rank-transform-of-an-array](https://github.com/priya2001/AC_potd_leetcode/tree/master/1256-rank-transform-of-an-array) |
 ## Bit Manipulation
 |  |
 | ------- |
