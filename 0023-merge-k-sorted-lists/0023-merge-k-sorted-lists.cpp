@@ -1,50 +1,43 @@
-/* 
-story:-
-1-make mergeTwosotedList function
-2-make partionAndMerge function
-
-TC-O(nlogk)
-SC-O(max(n,logk))
-*/
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
 class Solution {
 public:
-    ListNode *mergeTwoSortedList(ListNode *L1 ,ListNode *L2)
+    ListNode* MergeList(ListNode* l1,ListNode* l2)
     {
-        if(L1==NULL)return L2;
-        if(L2==NULL)return L1;
-        
-        if(L1->val<=L2->val)
+        if(l1==NULL)return l2;
+        if(l2==NULL)return l1;
+        if(l1->val<=l2->val)
         {
-            L1->next=mergeTwoSortedList(L1->next,L2);
-            return L1;
+            l1->next=MergeList(l1->next,l2);
+            return l1;
         }
         else
         {
-            L2->next=mergeTwoSortedList(L1,L2->next);
-            return L2;
+            l2->next=MergeList(l1,l2->next);
+            return l2;
         }
     }
-    ListNode *PartionAndMerge(int start,int end,vector<ListNode*>& lists)
+    ListNode* partitionMerge(int start,int end,vector<ListNode*>& lists)
     {
         if(start>end)return NULL;
-        
-        if(start==end)
-        {
-            return lists[start];
-        }
-        
-        int mid =start+(end-start)/2;
-        
-        ListNode *L1=PartionAndMerge(start,mid,lists);
-        ListNode *L2=PartionAndMerge(mid+1,end,lists);
-        
-        return mergeTwoSortedList(L1,L2);
+        if(start==end) return lists[start];
+
+        int mid=start+(end-start)/2;
+        ListNode *l1=partitionMerge(start,mid,lists);
+        ListNode *l2=partitionMerge(mid+1,end,lists);
+
+        return MergeList(l1,l2);
     }
     ListNode* mergeKLists(vector<ListNode*>& lists) {
-        
         int n=lists.size();
-        
-        return PartionAndMerge(0,n-1,lists);
-        
+        return partitionMerge(0,n-1,lists);
     }
 };
